@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Action History</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <aside>
+        <div class="top">
+          <div class="logo">
+            <h2><span class="danger">IoT System</span></h2>
+          </div>
+          <div class="close" id="close_btn">
+            <span class="material-symbols-sharp">close</span>
+          </div>
+        </div>
+
+        <div class="sidebar">
+          <a href="/profile.html">
+            <span class="material-symbols-sharp">person_outline</span>
+            <h3>Profile</h3>
+          </a>
+          <a href="/index.html">
+            <span class="material-symbols-sharp">grid_view</span>
+            <h3>Dashboard</h3>
+          </a>
+          <a href="/datasensors.html">
+            <span class="material-symbols-sharp">insights</span>
+            <h3>Data Sensors</h3>
+          </a>
+          <a class="active" href="/activehistory.html">
+            <span class="material-symbols-sharp">receipt_long</span>
+            <h3>Action History</h3>
+          </a>
+          <a href="https://www.google.gg/">
+            <span class="material-symbols-sharp">logout</span>
+            <h3>Logout</h3>
+          </a>
+        </div>
+      </aside>
+      <main>
+        <h1>Action History</h1>
+        <div class="history">
+          <table>
+            <thead>
+              <tr>
+                <th>Id</th>
+                <th>Device</th>
+                <th>Active</th>
+                <th>Time</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>001</td>
+                <td>Fan</td>
+                <td class="success">ON</td>
+                <td>16:09</td>
+              </tr>
+              <tr>
+                <td>002</td>
+                <td>Light</td>
+                <td class="danger">OFF</td>
+                <td>22:34</td>
+              </tr>
+              <tr>
+                <td>003</td>
+                <td>Fan</td>
+                <td class="success">ON</td>
+                <td>16:09</td>
+              </tr>
+              <tr>
+                <td>004</td>
+                <td>Light</td>
+                <td class="danger">OFF</td>
+                <td>22:34</td>
+              </tr>
+              <tr>
+                <td>005</td>
+                <td>Fan</td>
+                <td class="success">ON</td>
+                <td>16:09</td>
+              </tr>
+              <tr>
+                <td>006</td>
+                <td>Light</td>
+                <td class="danger">OFF</td>
+                <td>22:34</td>
+              </tr>
+              <tr>
+                <td>007</td>
+                <td>Fan</td>
+                <td class="success">ON</td>
+                <td>16:09</td>
+              </tr>
+              <tr>
+                <td>008</td>
+                <td>Light</td>
+                <td class="danger">OFF</td>
+                <td>22:34</td>
+              </tr>
+              <tr>
+                <td>009</td>
+                <td>Fan</td>
+                <td class="success">ON</td>
+                <td>16:09</td>
+              </tr>
+              <tr>
+                <td>010</td>
+                <td>Light</td>
+                <td class="danger">OFF</td>
+                <td>22:34</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="pagination" class="pagination">
+          <!-- Pagination buttons will be inserted here by JavaScript -->
+        </div>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

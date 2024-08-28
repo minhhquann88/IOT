@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IoT</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Phần trái -->
+      <aside>
+        <!-- ICON -->
+        <div class="top">
+          <div class="logo">
+            <h2><span class="danger">IoT System</span></h2>
+          </div>
+          <div class="close" id="close_btn">
+            <span class="material-symbols-sharp"> close </span>
+          </div>
+        </div>
+        <!-- MENU -->
+        <div class="sidebar">
+          <a href="/profile.html">
+            <span class="material-symbols-sharp">person_outline </span>
+            <h3>Profile</h3>
+          </a>
+          <a href="/index.html" class="active">
+            <span class="material-symbols-sharp">grid_view </span>
+            <h3>Dashboard</h3>
+          </a>
+          <a href="/datasensors.html">
+            <span class="material-symbols-sharp">insights </span>
+            <h3>Data Sensors</h3>
+          </a>
+          <a href="/activehistory.html">
+            <span class="material-symbols-sharp">receipt_long </span>
+            <h3>Action History</h3>
+          </a>
+          <a href="https://www.google.gg/">
+            <span class="material-symbols-sharp">logout</span>
+            <h3>logout</h3>
+          </a>
+        </div>
+      </aside>
+
+      <!-- Phần giữa -->
+      <main>
+        <h1>Dashboard</h1>
+
+        <div class="insights">
+          <!-- Temperature -->
+          <div class="sales">
+            <span class="material-symbols-sharp">sunny</span>
+            <div class="middle">
+              <div class="left">
+                <h3>Temperature</h3>
+                <h1>28°C</h1>
+              </div>
+            </div>
+          </div>
+          <!-- Humidity -->
+          <div class="expenses">
+            <span class="material-symbols-sharp">humidity_mid</span>
+            <div class="middle">
+              <div class="left">
+                <h3>Humidity</h3>
+                <h1>60%</h1>
+              </div>
+            </div>
+          </div>
+          <!-- Light -->
+          <div class="income">
+            <span class="material-symbols-sharp">light</span>
+            <div class="middle">
+              <div class="left">
+                <h3>Light</h3>
+                <h1>60 lux</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+        <!-- Biểu đồ -->
+        <h1>Chart</h1>
+        <div
+          class="chart-container"
+          style="position: relative; height: 50vh; width: 60vw"
+        >
+          <canvas id="myChart"></canvas>
+        </div>
+      </main>
+
+      <!-- Phần phải -->
+      <div class="right">
+        <div class="sales-analytics">
+          <h2>Control</h2>
+          <div class="item onlion">
+            <div class="icon">
+              <span class="material-symbols-sharp">mode_fan</span>
+            </div>
+            <div class="right_text">
+              <div class="info">
+                <h3>Fan</h3>
+                <button class="toggle-button" id="fan-button">Off</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="item onlion">
+            <div class="icon">
+              <span class="material-symbols-sharp">heat_pump</span>
+            </div>
+            <div class="right_text">
+              <div class="info">
+                <h3>Air Conditioner</h3>
+                <button class="toggle-button" id="ac-button">Off</button>
+              </div>
+            </div>
+          </div>
+          <div class="item onlion">
+            <div class="icon">
+              <span class="material-symbols-sharp">lightbulb</span>
+            </div>
+            <div class="right_text">
+              <div class="info">
+                <h3>Lightbulb</h3>
+                <button class="toggle-button" id="light-button">Off</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

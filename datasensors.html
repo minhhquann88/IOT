@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Sensors</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <aside>
+        <div class="top">
+          <div class="logo">
+            <h2><span class="danger">IoT System</span></h2>
+          </div>
+          <div class="close" id="close_btn">
+            <span class="material-symbols-sharp">close</span>
+          </div>
+        </div>
+
+        <div class="sidebar">
+          <a href="/profile.html"
+            ><span class="material-symbols-sharp">person_outline </span>
+            <h3>Profile</h3></a
+          ><a href="/index.html"
+            ><span class="material-symbols-sharp">grid_view </span>
+            <h3>Dashboard</h3></a
+          ><a class="active" href="/datasensors.html"
+            ><span class="material-symbols-sharp">insights </span>
+            <h3>Data Sensors</h3></a
+          >
+          <a href="/activehistory.html"
+            ><span class="material-symbols-sharp">receipt_long </span>
+            <h3>Action History</h3> </a
+          ><a href="https://www.google.gg/"
+            ><span class="material-symbols-sharp">logout </span>
+            <h3>logout</h3></a
+          >
+        </div>
+      </aside>
+      <main>
+        <h1>Data Sensor</h1>
+        <div class="data">
+          <table>
+            <thead>
+              <tr>
+                <th>Id</th>
+                <th>Temperature</th>
+                <th>Humidity</th>
+                <th>Bright</th>
+                <th>Time</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>001</td>
+                <td>28℃</td>
+                <td>60%</td>
+                <td>100 lux</td>
+                <td>21/08/2024</td>
+              </tr>
+              <tr>
+                <td>002</td>
+                <td>35℃</td>
+                <td>79%</td>
+                <td>560 lux</td>
+                <td>21/08/2024</td>
+              </tr>
+              <tr>
+                <td>003</td>
+                <td>32℃</td>
+                <td>89%</td>
+                <td>700 lux</td>
+                <td>22/08/2024</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="pagination" class="pagination">
+          <!-- Pagination buttons will be inserted here by JavaScript -->
+        </div>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
